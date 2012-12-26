@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="down_name_list">
+        <item>飞友官网</item>
+        <item>飞友WAP官网</item>
+    </string-array>
+    <string-array name="down_value_list">
+        <item>http://www.feelyou.me</item>
+        <item>http://wap.feelyou.me/search_user.php?uid=look</item>
+    </string-array>
+    <string-array name="main_item_name">
+        <item>开始呼叫</item>
+        <item>我的帐户</item>
+        <item>呼叫记录</item>
+        <item>通话详单</item>
+        <item>马上充值</item>
+        <item>推存好友</item>
+        <item>优惠专区</item>
+        <item>下载频道</item>
+        <item>神秘交友</item>
+        <item>位置交友</item>
+        <item>客户帮助</item>
+    </string-array>
+    <string-array name="call_main_type">
+        <item>两方通话</item>
+        <item>多方通话</item>
+    </string-array>
+    <string-array name="setting_item">
+        <item>设置帐户</item>
+        <item>修改密码</item>
+        <item>找回密码</item>
+        <item>余额查询</item>
+        <item>系统设置</item>
+    </string-array>
+    <string-array name="charge_type_list">
+        <item>神州行充值卡</item>
+        <item>联通充值卡</item>
+        <item>电信充值卡</item>
+    </string-array>
+    <string-array name="charge_type_ID">
+        <item>SZX</item>
+        <item>UNICOM</item>
+        <item>CT</item>
+    </string-array>
+    <string-array name="call_types">
+        <item>飞友拨号</item>
+        <item>电话拨号</item>
+    </string-array>
+</resources>

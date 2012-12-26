@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<include layout="@layout/title" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/call_notify" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone1" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext2"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone2" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext3"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone3" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext4"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone4" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext5"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone5" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext6"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone6" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext7"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone7" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext8"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone8" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext9"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone9" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textSize="16.0dip" android:id="@+id/call_more_phonetext0"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5.0dip" />
+			<EditText android:id="@+id/call_more_phone0" android:singleLine="true" android:phoneNumber="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<Button android:layout_gravity="center" android:id="@+id/cal_more_btnBegin"
+				android:layout_width="150.0dip" android:layout_height="wrap_content"
+				android:text="@string/begincall" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

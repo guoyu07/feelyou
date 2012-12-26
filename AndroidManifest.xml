@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.feelyou"
+    android:versionCode="9"
+    android:versionName="1.9" >
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:icon="@drawable/application"
+        android:label="@string/application_title"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity android:name=".ui.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/application_title" />
+        <activity
+            android:name=".ui.FreeTrialActivity"
+            android:label="@string/freetrial" />
+        <activity
+            android:name=".ui.CallActivity"
+            android:label="@string/begincall"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.CallOneActivity"
+            android:label="@string/call_more_title"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.CallMoreThanOneActivity"
+            android:label="@string/call_more_title" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:label="@string/setting_title"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.SettingAccountActivity"
+            android:label="@string/setting_account_title" />
+        <activity
+            android:name=".ui.SettingLinkActivity"
+            android:label="@string/setting_link_title" />
+        <activity
+            android:name=".ui.SettingPasswordActivity"
+            android:label="@string/setting_password_title" />
+        <activity
+            android:name=".ui.SettingFindPasswordActivity"
+            android:label="@string/setting_findpwd_title" />
+        <activity
+            android:name=".ui.SettingSearchBalanceActivity"
+            android:label="@string/setting_findbalance_title" />
+        <activity
+            android:name=".ui.RecordActivity"
+            android:label="@string/record_title" />
+        <activity
+            android:name=".ui.ChargeActivity"
+            android:label="@string/charge_title" />
+        <activity
+            android:name=".ui.ChargeHelpActivity"
+            android:label="@string/charge_help_title" />
+        <activity
+            android:name=".ui.SpreadActivity"
+            android:label="@string/spread_title" />
+        <activity
+            android:name=".ui.GiftActivity"
+            android:label="@string/gift_title" />
+        <activity
+            android:name=".ui.DownActivity"
+            android:label="@string/down_title" />
+        <activity
+            android:name=".ui.WapActivity"
+            android:label="@string/wap_title" />
+        <activity
+            android:name=".ui.NearActivity"
+            android:label="@string/near_title" />
+        <activity
+            android:name=".ui.NearListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/near_title" />
+        <activity
+            android:name=".ui.NearListActivity2"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/near_title" />
+        <activity
+            android:name=".ui.CallListActivity"
+            android:label="@string/calllist_title" />
+        <activity
+            android:name=".ui.InfoActivity"
+            android:label="@string/info_title" />
+        <activity
+            android:name=".ui.UserInfoActivity"
+            android:label="@string/user_info_title" >
+        </activity>
+        <activity
+            android:name=".ui.ContactsActivity"
+            android:label="电话薄" />
+        <activity
+            android:name=".ui.SelectCallTypeActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/select_call_type"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ui.ContactListView"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:noHistory="true" >
+        </activity>
+
+        <receiver android:name=".receiver.PhoneStateReceiver" >
+            <intent-filter android:priority="-1" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

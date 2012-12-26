@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<include layout="@layout/title" />
+	<TextView 
+		android:textSize="25.0dip" 
+		android:gravity="center"
+		android:id="@+id/txtFreeTrial" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/freetrial"
+	/>
+	<View 
+		android:id="@+id/line" 
+		android:background="#ff666666"
+		android:layout_width="fill_parent" 
+		android:layout_height="1.0dip"
+	/>
+	<GridView 
+		android:gravity="center" 
+		android:id="@+id/gridview"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:horizontalSpacing="20.0dip" 
+		android:verticalSpacing="20.0dip"
+		android:stretchMode="columnWidth" 
+		android:numColumns="3"
+	 />
+</LinearLayout>

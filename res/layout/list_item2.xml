@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/list_item_parent_layout"
+	>
+	<!-- 此处会根据实际情况显示首字母提示-->
+	<TextView android:id="@+id/text_first_char_hint"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/list_first_char_hint_text_size"
+		android:paddingLeft="@dimen/list_item_first_char_padding"
+		android:visibility="gone">
+	</TextView>
+	<!-- 以下的RelativeLayout为常规的ListItem布局 -->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <com.feelyou.view.RemoteImageView 
+        android:id="@+id/list_item_img_view" 
+        android:layout_width="@dimen/list_item_icon_length"
+        android:layout_height="@dimen/list_item_icon_length"
+        android:padding="0dip"
+        android:layout_margin="0dip"
+        android:focusable="false"
+        android:background="@drawable/qa_anchor_btn_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/male" />
+    <LinearLayout
+		android:id="@+id/llname"
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/list_item_img_view"
+		android:layout_marginLeft="5dp" >
+		
+		<TextView 
+		    android:id="@+id/list_item_text_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/list_item_name_size"
+			android:singleLine="true"
+			android:ellipsize="marquee"
+			android:text="名称"
+		/>  
+		<TextView 
+			android:id="@+id/list_item_text_distance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/list_item_url_size"
+			android:singleLine="true"
+			android:ellipsize="marquee"
+			android:text="距离"
+		/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:id="@+id/list_item_text_signature" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/llname"
+	    android:layout_toLeftOf="@+id/ivArrow"
+	    android:gravity="right"
+	    android:maxLines="3"
+	    android:layout_centerVertical="true"
+	    android:text="个性签名"
+	    />
+    
+    <ImageView 
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mm_submenu_normal" />
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/splash"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <ImageView 
+  	android:id="@+id/logo"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:src="@drawable/logo"
+  	android:layout_centerInParent="true"
+  	android:layout_above="@+id/android" />
+  <ImageView 
+  	android:id="@+id/android" 
+  	android:layout_width="wrap_content" 
+  	android:layout_height="wrap_content"
+  	android:src="@drawable/android" android:layout_centerInParent="true" />
+  	
+  <LinearLayout 
+  	android:gravity="center" android:orientation="horizontal"
+  	android:layout_width="wrap_content" android:layout_height="40.0dip"
+  	android:layout_below="@+id/android" android:layout_centerHorizontal="true"
+  >
+  	<ProgressBar android:layout_gravity="center_vertical" android:id="@+id/titleProcessIndictor" 
+  	android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip"
+  	style="?android:progressBarStyleSmall" />
+  	<TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#FF0000" 
+  	android:id="@+id/progresstext" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+  	android:layout_marginLeft="15.0dip" android:layout_marginRight="7.0dip" 
+  	android:text="初始化,请稍后..." />
+  	<TextView android:id="@+id/tvVersionName" 
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:text="1.0"
+  		android:layout_gravity="center" />
+  </LinearLayout>  
+</RelativeLayout>

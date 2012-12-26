@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 WiYun Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+ 
+<resources>
+	<declare-styleable name="com.wiyun.offer.OfferBanner">
+		<!-- 
+			背景色, 如果没有设置, 则背景色根据广告实际内容改变, 如果
+			应用程序本身具有一个特定的色调, 可以通过指定背景色来使广告
+			条更加匹配应用界面风格
+		 -->
+		<attr name="backgroundColor" format="color" />
+		
+		<!--
+			广告上的文字颜色, 对横幅和文字广告有效, 一般如果指定了
+			backgroundColor属性, 则一般也需要对textColor进行设置, 
+			否则文字颜色会根据广告实际内容改变
+		 -->
+		<attr name="textColor" format="color" />
+		
+		<!--
+			广告刷新间隔, 单位是秒, 如果不指定, 则默认不刷新. 如果指定, 必须指定
+			一个大于60的值
+		 -->
+		<attr name="refreshInterval" format="integer" />
+		
+		<!--
+			设置transition来改变切换广告时的动画效果，缺省是flipX 
+			注意：如果showLoadingHint是true，则这个属性会被忽略
+		 -->
+		<attr name="transition" format="enum">
+			<enum name="random" value="0"/>
+			<enum name="flipX" value="1"/>
+			<enum name="flipY" value="2"/>
+			<enum name="leftPush" value="3"/>
+			<enum name="rightPush" value="4"/>
+			<enum name="topPush" value="5"/>
+			<enum name="bottomPush" value="6"/>
+			<enum name="fade" value="7"/>
+		</attr>
+		
+		<attr name="appKey" format="string" />
+		
+		<attr name="secretKey" format="string" />
+		
+		<attr name="hidePoints" format="boolean" />
+		
+		<attr name="hideDownIcon" format="boolean" />
+	</declare-styleable>
+</resources>

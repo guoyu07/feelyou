@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView 
+        android:id="@+id/ivIcon" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:src="@drawable/male" />
+    
+    <LinearLayout
+		android:id="@+id/llname"
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/ivIcon"
+		android:layout_marginLeft="5dp" >
+		
+		<TextView 
+		    android:id="@+id/tvName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#FF0000"
+			android:text="名称"
+		/>  
+		<TextView 
+			android:id="@+id/tvDistance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="距离"
+		/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:id="@+id/tvSignature" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/llname"
+	    android:layout_toLeftOf="@+id/ivArrow"
+	    android:gravity="right"
+	    android:maxLines="3"
+	    android:layout_centerVertical="true"
+	    android:text="个性签名"
+	    />
+    
+    <ImageView 
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mm_submenu_normal" />
+    
+    
+    
+
+</RelativeLayout>

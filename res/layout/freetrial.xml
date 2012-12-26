@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<include layout="@layout/title" />
+	<TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginTop="5.0dip"
+		android:text="@string/freetrial_phone1" />
+	<EditText 
+		android:id="@+id/ft_phone1" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:inputType="phone"
+		android:saveEnabled="true"
+		android:keepScreenOn="true"
+		android:hint="请输入电话号码..." />
+	<TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/freetrial_phone2" />
+	<EditText 
+		android:id="@+id/ft_phone2" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:inputType="phone"
+		android:hint="请再次输入电话号码..." />
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/freetrial_message" />
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10.0dip">
+		<Button 
+			android:layout_gravity="center" 
+			android:id="@+id/ft_begin"
+			android:layout_width="150.0dip" 
+			android:layout_height="wrap_content"
+			android:text="@string/freetrial" />
+		<Button 
+		    android:layout_gravity="center"
+		    android:id="@+id/btnLogin"
+		    android:layout_width="150.0dip"
+		    android:layout_height="wrap_content"
+		    android:text="已有账号" />
+	</LinearLayout>
+</LinearLayout>

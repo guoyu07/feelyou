@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<include layout="@layout/title" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/charge_label1" />
+				<TextView 
+					android:id="@+id/charge_tv_account"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="@string/charge_label2" />
+			<Spinner 
+				android:id="@+id/charge_spinner_chargeType"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" />
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="@string/charge_label3" />
+			<EditText 
+				android:id="@+id/charge_et_cardId"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				 />
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="@string/charge_label4" />
+			<EditText 
+				android:id="@+id/charge_et_cardPwd"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:password="true" />
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="@string/charge_label5" />
+			<EditText 
+				android:id="@+id/charge_et_money"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:inputType="number" />
+			<TextView 
+				android:id="@+id/charge_notice"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:text="@string/charge_notice" />
+			<RelativeLayout 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<Button 
+					android:id="@+id/charge_btn_help"
+					android:layout_width="150.0dip" 
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5.0dip" 
+					android:text="@string/charge_help"
+					android:layout_alignParentLeft="true" />
+				<Button 
+					android:id="@+id/charge_btn_ok" 
+					android:layout_width="150.0dip"
+					android:layout_height="wrap_content" 
+					android:layout_marginRight="5.0dip"
+					android:text="@string/charge_ok" 
+					android:layout_alignParentRight="true" />
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
